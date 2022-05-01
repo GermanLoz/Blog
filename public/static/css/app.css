@@ -1,0 +1,310 @@
+:root {
+    --negro: #393939;
+    --blanco: #ececec;
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+    --tipo-principal: Helvetica, Arial, sans-serif;
+  }
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+/*--------NAV BAR----------*/
+.container-nav-bar{
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #15202B;
+  }
+.nav-bar-ul-li .nav-link{ 
+    color: #e2dcdc;
+    font-family: 'Rubik', sans-serif;
+    margin: 0rem 1rem;
+}
+.nav-bar-ul{
+    display: flex;
+}
+/*--------END NAV BAR----------*/
+.container-panel-inicio{
+    height: 70vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
+}
+.title-home {
+    font-size: 43px;
+    color: #e2dcdc;
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+}
+.text-panel-home{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.p-home-panel{
+    margin:1rem 7rem 0rem 7rem;
+    line-height: 45px;
+    font-weight: bolder;
+    font-family: 'Marvel', sans-serif;
+    font-size: 30px;
+    color: #e2dcdc;
+}
+.avatar-me{
+    height: 60vh;
+    border-radius: 50%;
+    border: 3px solid #2b2a2a;
+}
+.content-multimedia-panel{
+    display: flex;
+    margin-right: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------CARRUSEL--COMPONENT-----*/
+.title-post-relevantes{
+  font-family: 'Marvel', sans-serif;
+  text-align: center;
+  margin: 2rem 0rem;
+  font-size: 35px;
+}
+.carrousel {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+  }
+  .relevant{
+    height: 50vh;
+    border-radius: 15px;
+    width: 30vw;
+    border: 2px solid rgb(148, 208, 228);
+  }
+  .carrousel .grande {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  
+  .carrousel .img {
+    /*width: calc( 100% / 2 - 2em);*/
+    min-height: 10vh;
+    max-height: 50vh;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .punto.activo {
+    background-color: lightblue;
+  }
+
+/*--------ALL POST----------*/
+.container-all-post{
+  min-height: 70vh;
+  background: #15202B;
+}
+.title-all-post{
+  color: #ececec;
+  font-family: 'Marvel', sans-serif;
+  font-size: 35px;
+  font-style: italic;
+  margin: 15px;
+}
+.all-post-ul{
+  width: 70vw;
+  margin: auto;
+}
+.container-content-post{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-content-post img{
+  max-height: 26rem;
+}
+.all-post-ul li a p{
+  color: #f0eeee;
+}
+.title-post{
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #ececec;
+  margin: 1rem 0rem;
+  max-width: 200px;
+}
+.container-content-post p {
+  width: 95%;
+  font-size: 25px;
+  margin: 2.5rem 0rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*--------END ALL-POST----------*/
+
+/*--------FOOTER CODE----------*/
+.footer{
+  display: flex;
+  height: 4rem;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2d2d;
+}
+.footer .copy{
+  color: #e2dcdc;
+}
+/*--------END FOOOTER----------*/
+
+
+/*--------CONTENT PANEL COMPONENT----------*/
+
+.container-panel-component{
+  min-height: 75vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto auto auto ;
+}
+.animation-component{
+  font-size: 13vw;
+  margin: auto;
+  color: none;
+  background-color: none;
+  transition: ease-out;
+  transition-duration: 3s;
+  animation-duration:3s ;
+  animation-name: floting;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floting {
+  0%{transform: translate(-5px, 10px) rotate(220.55deg);color: #20ff02;}
+  25% {transform: translate(-8px, 15px);} 
+  50% {transform: translate(5px, -10px);}
+  75% {transform: translate(-20px, -10px);}
+  100%{transform: translate(-5px, 10px) rotate(5deg); color: #07971a;}
+}
+
+#lienzo{
+  position: absolute;
+  top: 4.5rem;
+  z-index: -1;
+  left: 0px;
+}
+/*--------END CONTENT PANEL COMPONENT----------*/
+
+
+/*---------CODE INPUT SEARCH COMPONENT---------*/
+.container-search-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:6.5rem;
+}
+.container-search-input input{
+  border: 1px solid #0B0A47;
+  width: 25vw;
+  height: 2rem;
+  padding-left: 5px;
+  font-family: 'Marvel', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 8px 0px 0px 8px;
+}
+.button-search{
+  height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 3rem;
+  font-size: 1.1rem;
+  border-radius: 0px 8px 8px 0px;
+  background: #4643DF;
+  border: none;
+}
+/*---------CODE INPUT SEARCH END*/
+
+
+
+/*-----------FISICA   PANEL-------------*/
+.container-panel-physics{
+  display: grid;
+  grid-template-columns: 50% auto;
+  min-height: 65vh;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../../images/bg-physics.png');
+}
+.container-panel-physics .einstein {
+  height: 50vh;
+  margin-right: 2rem;
+  margin-left: auto;
+  margin-top: 6vh;
+  border-radius: 10rem 0px 0px 10rem;
+}
+.container-panel-physics h1 {
+  text-align: center;
+  color:rgb(240, 240, 240);
+  font-family: 'Rubik', sans-serif;
+  text-shadow:5px 5px 5px #15202B ;
+  font-size: 5rem;
+}
+/*---------------END FISICA-------------*/
