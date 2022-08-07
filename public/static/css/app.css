@@ -17,6 +17,8 @@
 }
 /*--------NAV BAR----------*/
 .container-nav-bar{
+    z-index: 10000;
+    top: 0%;
     width: 100vw;
     height: 4.5rem;
     display: flex;
@@ -26,6 +28,7 @@
   }
 .nav-bar-ul-li .nav-link{ 
     color: #e2dcdc;
+    text-decoration: none;
     font-family: 'Rubik', sans-serif;
     margin: 0rem 1rem;
 }
@@ -202,11 +205,11 @@
 /*--------FOOTER CODE----------*/
 .footer{
   display: flex;
-  height: 4rem;
+  height: 5rem;
   width: 100vw;
   align-items: center;
   justify-content: center;
-  background-color: #2e2d2d;
+  background-color: #3a4cec;
 }
 .footer .copy{
   color: #e2dcdc;
@@ -218,6 +221,7 @@
 
 .container-panel-component{
   min-height: 75vh;
+  margin-bottom:2rem;
   display: grid;
   align-items: center;
   grid-template-columns: auto auto auto auto ;
@@ -295,10 +299,9 @@
 }
 .container-panel-physics .einstein {
   height: 50vh;
-  margin-right: 2rem;
-  margin-left: auto;
+  margin: auto;
   margin-top: 6vh;
-  border-radius: 10rem 0px 0px 10rem;
+  border-radius: 0rem 0px 0px 0rem;
 }
 .container-panel-physics h1 {
   text-align: center;

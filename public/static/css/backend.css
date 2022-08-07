@@ -1,0 +1,112 @@
+:root {
+    --negro: #393939;
+    --blanco: #ececec;
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+    --tipo-principal: Helvetica, Arial, sans-serif;
+  }
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    outline: none;
+    font-family: var(--tipo-principal);
+    list-style: none;
+    color: var(--blanco);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 300px auto;
+    background: #15202B;
+} 
+i {
+    color: var(--blanco);
+    font-size:3rem;
+    border:1px solid var(--blanco);
+}
+li a p {
+    padding:0.5rem 0rem; 
+}
+.nav {
+    margin-left: 5rem;
+    display:flex;
+    align-items:center;
+    width:175px;
+    height:100vh;
+}
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem 4rem 1rem;
+    border:1px solid var(--blanco);
+    text-align: center;
+    border-radius: 2rem;
+}
+li a {
+    font-family: var(--tipo-principal);
+    text-decoration: none;
+    display:block;
+}
+.container-admin{
+    height:100vh;
+}
+.title-backend {
+    font-size: 2.5rem;
+    margin:2rem 3rem;
+}
+.select-create {
+    color: var(--negro);
+    padding: 0rem 3rem;
+    align-items: left;
+    margin:1.6rem 0rem;
+    background: var(--marcado);
+    font-weight: 700;
+    height:3rem;
+}
+.select-create option{
+    color: var(--negro);
+    font-weight: 700;
+}
+input {
+    margin: 0.5rem 0rem;
+    width: 50%;
+    min-width: 300px;
+    color: var(--negro);
+}
+.title-form{
+    padding:5px 0rem;
+    font-size: 1rem;
+    height:2rem;
+}
+input[type="file"]{
+    padding: 0.5rem 0rem;
+    background: var(--marcado);
+}
+textarea {
+    color: var(--negro);
+    height:10rem;
+    padding-left: 5px;
+    font-size: 1rem;
+    min-width: 300px;
+}
+.form-create {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form-create input{
+    padding-left:5px;
+    font-weight: 700;
+}
+#content_form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+

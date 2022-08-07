@@ -12,9 +12,8 @@ class Carrusel extends Component
      *
      * @return void
      */
-    public function __construct($post)
+    public function __construct()
     {
-        $this->post_relevantes = $post;
     }
 
     /**
